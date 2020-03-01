@@ -1,0 +1,88 @@
+Running BrowserMob Proxy using LittleProxy implementation. To revert to the legacy implementation, run the proxy with the command-line option '--use-littleproxy false'.
+[INFO  2020-03-01T13:31:02,658 net.lightbody.bmp.proxy.Main] (main) Starting BrowserMob Proxy version 2.1.4 
+[INFO  2020-03-01T13:31:02,682 org.eclipse.jetty.util.log] (main) jetty-7.x.y-SNAPSHOT 
+[INFO  2020-03-01T13:31:03,031 org.eclipse.jetty.util.log] (main) started o.e.j.s.ServletContextHandler{/,null} 
+[INFO  2020-03-01T13:31:03,137 org.eclipse.jetty.util.log] (main) Started SelectChannelConnector@0.0.0.0:8080 
+[INFO  2020-03-01T13:31:04,110 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp664186542-28) Starting proxy at address: 0.0.0.0/0.0.0.0:8081 
+[INFO  2020-03-01T13:31:04,146 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp664186542-28) Proxy listening with TCP transport 
+[INFO  2020-03-01T13:31:04,801 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp664186542-28) Proxy started at address: /0:0:0:0:0:0:0:0:8081 
+[INFO  2020-03-01T13:31:26,772 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-0) (CONNECTING) [id: 0xc96e018c]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: accounts.google.com/172.217.24.13:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_241]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_241]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+
+[INFO  2020-03-01T13:31:48,780 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-5) (CONNECTING) [id: 0x6deb4dd5]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: accounts.google.com/172.217.24.13:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_241]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_241]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+
+[INFO  2020-03-01T13:32:12,652 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-0) (CONNECTING) [id: 0xeac4c4e1]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: accounts.google.com/172.217.24.13:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_241]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_241]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+
+[INFO  2020-03-01T13:32:26,575 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-3) (CONNECTING) [id: 0xc4071ad8]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: clients4.google.com/172.217.24.14:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_241]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_241]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_241]
+
+[INFO  2020-03-01T13:32:28,876 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-0) (AWAITING_INITIAL) [id: 0x1699407c, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54330]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,876 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-5) (AWAITING_INITIAL) [id: 0x00f31a41, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54319]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,876 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-2) (AWAITING_INITIAL) [id: 0x89906242, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54226]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,876 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-4) (AWAITING_INITIAL) [id: 0x11914441, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54100]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,876 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-1) (AWAITING_INITIAL) [id: 0xd3cadb05, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54089]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,876 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-3) (AWAITING_INITIAL) [id: 0x6fcf435d, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54194]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,876 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-6) (AWAITING_INITIAL) [id: 0x69713bd1, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54140]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,876 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-7) (AWAITING_INITIAL) [id: 0x528f8b2f, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54147]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,877 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-1) (AWAITING_INITIAL) [id: 0x5a4b5ddc, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54151]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,877 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-3) (AWAITING_INITIAL) [id: 0xe3009b79, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54137]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,877 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-0) (AWAITING_INITIAL) [id: 0x4944aa00, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54222]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,877 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-5) (AWAITING_INITIAL) [id: 0x5f7bbe22, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54101]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,877 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-2) (AWAITING_INITIAL) [id: 0x43c44e3b, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54153]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-4) (AWAITING_INITIAL) [id: 0xe6e0b916, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54263]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-7) (AWAITING_INITIAL) [id: 0x59bd778f, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54163]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-1) (AWAITING_INITIAL) [id: 0x39776bc3, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54135]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-3) (AWAITING_INITIAL) [id: 0xd0f89b70, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54228]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-0) (AWAITING_INITIAL) [id: 0x5859c944, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54164]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-2) (AWAITING_INITIAL) [id: 0x629be858, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54118]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-7) (AWAITING_INITIAL) [id: 0xcdeaeec9, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54186]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-1) (AWAITING_INITIAL) [id: 0x022fb1e2, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54224]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-5) (AWAITING_INITIAL) [id: 0x93734e44, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54159]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-4) (AWAITING_INITIAL) [id: 0x2b42ca79, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54214]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-3) (AWAITING_INITIAL) [id: 0xa7d52e66, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54212]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-0) (AWAITING_INITIAL) [id: 0x89c3c0c4, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54255]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-2) (AWAITING_INITIAL) [id: 0x4b2bb734, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54192]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-7) (AWAITING_INITIAL) [id: 0x4d9174ef, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54327]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-4) (AWAITING_INITIAL) [id: 0xb0ea0134, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54138]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,878 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-1) (AWAITING_INITIAL) [id: 0x39dceb61, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54257]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,879 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-0) (AWAITING_INITIAL) [id: 0x0c217a32, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54149]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+[INFO  2020-03-01T13:32:28,879 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-4) (AWAITING_INITIAL) [id: 0x81c85305, L:/0:0:0:0:0:0:0:1:8081 - R:/0:0:0:0:0:0:0:1:54158]: An IOException occurred on ClientToProxyConnection: 远程主机强迫关闭了一个现有的连接。 
+^C终止批处理操作吗(Y/N)? 
